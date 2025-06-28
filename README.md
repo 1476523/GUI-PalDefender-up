@@ -23,13 +23,13 @@ English |[繁體中文](./README_ZH_TW.md)
 
 ## About [↑](#GUI-PalDefender-up)
 
-This program is to prevent incorrect updates,
-Lock the updated folder and back up the original archive,
-Crawl the latest archives and replace the existing ones.
-
-The code is closed source and we dont have any plans to release it.
-
-I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
+<br>This program is to prevent incorrect updates,
+<br>Lock the updated folder and back up the original archive,
+<br>Crawl the latest archives and replace the existing ones.
+<br>
+<br>The code is closed source and we dont have any plans to release it.
+<br>
+<br>I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 
 <br>
 
@@ -48,7 +48,7 @@ I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 
 1. Download the latest release at [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases)
 2. Place the file in your `Palguard` folder.
-   It should look like this：
+   <br>It should look like this：
    ```
    palserver-gui/
    ├── locales/
@@ -85,7 +85,7 @@ I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
    ```
 3. Please close `palserver-gui` first before starting `GUI PalDefender up.exe`.
 4. When `gui paldefender up.exe` is executed, the original archive will be backed up and the online archive will be checked for updates.
-   The following steps will be performed when executing `GUI PalDefender up.exe`:
+   <br>The following steps will be performed when executing `GUI PalDefender up.exe`:
    ```
    GUI PalDefender up.exe Start
    └── Check current files
@@ -106,12 +106,12 @@ I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 			   	   └── complete
    ```
 5. `GUI PalDefender up.exe` executes very fast (usually completed in seconds),
-   You can check the execution log to confirm that the update is successful.
+   <br>You can check the execution log to confirm that the update is successful.
 6. After starting the server,
-   Check if Starting PalDefender Anti Cheat above CMD is already the latest version.
+   <br>Check if Starting PalDefender Anti Cheat above CMD is already the latest version.
 7. When there are too many backup folders,
-   For security reasons, please keep the backup of the last 2 versions (including the current version).
-   Example of folder deletion：
+   <br>For security reasons, please keep the backup of the last 2 versions (including the current version).
+   <br>Example of folder deletion：
    ```
    Palguard
    ├── 140/                    # << File folders that can be deleted
@@ -128,14 +128,14 @@ I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 ## Question [↑](#GUI-PalDefender-up)
 
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
-   1.1 Maybe PalDefender has not been updated yet,
-   <br>Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
-   1.2 There may be a problem in the GUI-PalDefender-up,
-   <br>Please check the execution log.
-   1.3 The PalDefender file may not be covered normally,
-   <br>Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
-	  Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
-	  Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
+   - 1.1 Maybe PalDefender has not been updated yet,
+    <br> Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
+   - 1.2 There may be a problem in the GUI-PalDefender-up,
+    <br> Please check the execution log.
+   - 1.3 The PalDefender file may not be covered normally,
+    <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
+    <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
+    <br> Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
 
 <br>
 
