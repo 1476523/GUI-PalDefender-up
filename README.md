@@ -32,8 +32,6 @@ This program is to prevent incorrect updates,
 <br>
 <br>I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 
-<br>
-
 ## Features []()
 
 - [x] Check whether the file path is correct.
