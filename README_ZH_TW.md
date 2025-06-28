@@ -1,10 +1,8 @@
-<div align="center">
-<p><em>GUI-PalDefender-up</em></p>(#GUI-PalDefender-up)
-<div>
-<p><em>適用於Palserver-GUI中的Paldefender檔案更新</em></p>
-</div>
+GUI-PalDefender-up (#GUI-PalDefender-up)
+<br>適用於Palserver-GUI中的Paldefender檔案更新
+<br>
 [English](./README.md) | 繁體中文 |
-
+<br>
 > [!注意]
 >
 > 此更新程式雖然已經做了基本的運作測試，但也有可能發生意外的情況。
