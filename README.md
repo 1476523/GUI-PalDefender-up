@@ -13,14 +13,14 @@ English |[繁體中文](./README_ZH_TW.md)
 > Avoid unexpected situations。
 >
 
-## [Table of Contents](#Tup-)
+## [Table of Contents](#Table of Contents)
 * [About](#about-)
 * [Features](#features-)
 * [Installation](#installation-)
 * [Question](#Question-)
 * [Authors](#authors-)
 
-## About [↑](#Tup)
+## About [↑](#Table of Contents)
 
 <br>This program is to prevent incorrect updates,
 <br>Lock the updated folder and back up the original archive,
