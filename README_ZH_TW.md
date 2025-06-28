@@ -1,6 +1,5 @@
-(#GUI-PalDefender-up)
-<p><em>GUI-PalDefender-up</em></p>
-<p><em>適用於Palserver-GUI中的Paldefender檔案更新</em></p>
+GUI-PalDefender-up (#GUI-PalDefender-up)
+<br>適用於Palserver-GUI中的Paldefender檔案更新
 
 [English](./README.md) | 繁體中文 |
 
