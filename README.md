@@ -128,11 +128,11 @@ English |[繁體中文](./README_ZH_TW.md)
 ## Question [↑](#GUI-PalDefender-up)
 
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
-   - 1.1 Maybe PalDefender has not been updated yet,
+   -  Maybe PalDefender has not been updated yet,
     <br> Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
-   - 1.2 There may be a problem in the GUI-PalDefender-up,
+   -  There may be a problem in the GUI-PalDefender-up,
     <br> Please check the execution log.
-   - 1.3 The PalDefender file may not be covered normally,
+   -  The PalDefender file may not be covered normally,
     <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
     <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
     <br> Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
