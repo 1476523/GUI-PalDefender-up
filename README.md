@@ -2,7 +2,7 @@
 <br>Applicable to PalDefender archive updates within palserver-gui.
 English |[繁體中文](./README_ZH_TW.md)
 
-> [!IMPORTANT]
+> [!WARNING]
 >
 > Although this update program has undergone basic operational testing, unexpected situations may occur.
 > 
