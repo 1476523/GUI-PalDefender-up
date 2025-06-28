@@ -41,8 +41,6 @@ This program is to prevent incorrect updates,
 - [x] Output work log.
 - [] ????
 
-<br>
-
 ## Installation []()
 
 1. Download the latest release at [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases)
