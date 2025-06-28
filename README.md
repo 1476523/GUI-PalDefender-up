@@ -120,7 +120,6 @@ This program is to prevent incorrect updates,
    ├── palguard.version.txt    # << You can view the current version number here
    └── version.dll
    ```
-<br>
 
 ## Question []()
 
