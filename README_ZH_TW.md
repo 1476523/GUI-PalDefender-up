@@ -109,7 +109,7 @@
 5. `GUI PalDefender up.exe` 執行速度很快(通常是秒完成)，
    <br>可以檢查執行日誌來確認更新是否成功。
 6. 啟動伺服器後，
-   <br>查看CMD上方的 Starting PalDefender Anti Cheat 是否已經是最新版本。
+   <br>查看CMD上方的 `Starting PalDefender Anti Cheat` 是否已經是最新版本。
 7. 當備份資料夾過多時，
    <br>為了安全起見，請保留最近2個版本的備份(含當前版本)。
    <br>檔案刪除的範例：
