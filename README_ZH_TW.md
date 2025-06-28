@@ -1,5 +1,5 @@
 ## GUI-PalDefender-up
-<br>適用於Palserver-GUI中的Paldefender檔案更新
+適用於Palserver-GUI中的Paldefender檔案更新
 <br>
 [English](./README.md) | 繁體中文
 <br>
