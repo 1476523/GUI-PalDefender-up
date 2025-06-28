@@ -1,7 +1,9 @@
 ## GUI-PalDefender-up
-<br>Applicable to PalDefender archive updates within palserver-gui.
+Applicable to PalDefender archive updates within palserver-gui.
+<br>
+<br>
 English |[繁體中文](./README_ZH_TW.md)
-
+<br>
 > [!WARNING]
 >
 > Although this update program has undergone basic operational testing, unexpected situations may occur.
