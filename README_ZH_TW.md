@@ -1,4 +1,4 @@
-GUI-PalDefender-up [](#GUI-PalDefender-up)
+GUI-PalDefender-up [](#up)
 <br>適用於Palserver-GUI中的Paldefender檔案更新
 <br>
 [English](./README.md) | 繁體中文 |
@@ -14,14 +14,14 @@ GUI-PalDefender-up [](#GUI-PalDefender-up)
 > 以免發生意料之外的狀況
 >
 
-## 目錄 [↑](#GUI-PalDefender-up)
+## 目錄 [↑](#up)
 * [關於](#關於-)
 * [功能](#功能-)
 * [安裝](#安裝-)
 * [問題](#問題-)
 * [作者](#作者-)
 
-## 關於 [↑](#GUI-PalDefender-up)
+## 關於 [↑](#up)
 
 <br>為了防止錯誤的更新而建立的更新程式，
 <br>鎖定更新的資料夾並備份原始檔案，
@@ -34,7 +34,7 @@ GUI-PalDefender-up [](#GUI-PalDefender-up)
 
 <br>
 
-## 功能 [↑](#GUI-PalDefender-up)
+## 功能 [↑](#up)
 
 - [x] 偵測路徑是否正確
 - [x] 備份現有版本檔案
@@ -45,7 +45,7 @@ GUI-PalDefender-up [](#GUI-PalDefender-up)
 
 <br>
 
-## 安裝 [↑](#GUI-PalDefender-up)
+## 安裝 [↑](#up)
 
 1. 在 [github](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
 2. 將程式放在你的 `Palguard` 資料夾內
@@ -126,7 +126,7 @@ GUI-PalDefender-up [](#GUI-PalDefender-up)
    ```
 <br>
 
-## 問題 [↑](#GUI-PalDefender-up)
+## 問題 [↑](#up)
 
 1. 按下 Palguard 的更新後，PalDefender 沒有更新至最新版本。
    -  可能 PalDefender 尚未更新，
@@ -140,7 +140,7 @@ GUI-PalDefender-up [](#GUI-PalDefender-up)
 
 <br>
 
-## 作者 [↑](#GUI-PalDefender-up)
+## 作者 [↑](#up)
 
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
