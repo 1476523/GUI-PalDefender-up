@@ -23,13 +23,13 @@
 
 ## 關於 [↑](#GUI-PalDefender-up)
 
-為了防止錯誤的更新而建立的更新程式，
-鎖定更新的資料夾並備份原始檔案，
-抓取最新的檔案並取代現有檔案。
-
-代碼是閉源的，我們沒有計劃發布它。
-
-可以在 [palserver-GUI Discord](https://discord.gg/UA24pctUYc) 找到我。
+<br>為了防止錯誤的更新而建立的更新程式，
+<br>鎖定更新的資料夾並備份原始檔案，
+<br>抓取最新的檔案並取代現有檔案。
+<br>
+<br>代碼是閉源的，我們沒有計劃發布它。
+<br>
+<br>可以在 [palserver-GUI Discord](https://discord.gg/UA24pctUYc) 找到我。
 
 
 <br>
@@ -49,7 +49,7 @@
 
 1. 在 [github](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
 2. 將程式放在你的 `Palguard` 資料夾內
-   目錄結構應如下所示：
+   <br>目錄結構應如下所示：
    ```
    palserver-gui/
    ├── locales/
@@ -86,7 +86,7 @@
    ```
 3. 請先關閉 `palserver-gui` 後再啟動 `GUI PalDefender up.exe`，
 4. 執行 `GUI PalDefender up.exe` 時將會備份原始檔案並檢查更新。
-   執行 `GUI PalDefender up.exe` 時將會執行以下步驟：
+   <br>執行 `GUI PalDefender up.exe` 時將會執行以下步驟：
    ```
    GUI PalDefender up.exe 啟動
    └── 檢查目前檔案
@@ -107,12 +107,12 @@
 			   	   └── 完畢
    ```
 5. `GUI PalDefender up.exe` 執行速度很快(通常是秒完成)，
-   可以檢查執行日誌來確認更新是否成功。
+   <br>可以檢查執行日誌來確認更新是否成功。
 6. 啟動伺服器後，
-   查看CMD上方的 Starting PalDefender Anti Cheat 是否已經是最新版本。
+   <br>查看CMD上方的 Starting PalDefender Anti Cheat 是否已經是最新版本。
 7. 當備份資料夾過多時，
-   為了安全起見，請保留最近2個版本的備份(含當前版本)。
-   檔案刪除的範例：
+   <br>為了安全起見，請保留最近2個版本的備份(含當前版本)。
+   <br>檔案刪除的範例：
    ```
    Palguard
    ├── 140/                    # << 可以刪除的資料夾
@@ -129,14 +129,14 @@
 ## 問題 [↑](#GUI-PalDefender-up)
 
 1. 按下 Palguard 的更新後，PalDefender 沒有更新至最新版本。
-   1- 可能 PalDefender 尚未更新，
-      請查看執行日誌與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
-   2- 可能執行 GUI-PalDefender-up 時出現問題，
-      請查看執行日誌。
-   3- 可能未正常覆蓋 PalDefender 檔案，
-      請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
-	  找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
-	  前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新
+   -  可能 PalDefender 尚未更新，
+ <br> 請查看執行日誌與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
+   -  可能執行 GUI-PalDefender-up 時出現問題，
+ <br> 請查看執行日誌。
+   -  可能未正常覆蓋 PalDefender 檔案，
+ <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
+ <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
+ <br> 前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新
 
 <br>
 
