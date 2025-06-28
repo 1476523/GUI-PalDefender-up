@@ -20,7 +20,7 @@ English |[繁體中文](./README_ZH_TW.md)
 * [Question](#Question-)
 * [Authors](#authors-)
 
-## About [↑]
+## About [↑]()
 
 <br>This program is to prevent incorrect updates,
 <br>Lock the updated folder and back up the original archive,
@@ -32,7 +32,7 @@ English |[繁體中文](./README_ZH_TW.md)
 
 <br>
 
-## Features [↑]
+## Features [↑]()
 
 - [x] Check whether the file path is correct.
 - [x] Back up existing version archives.
@@ -43,7 +43,7 @@ English |[繁體中文](./README_ZH_TW.md)
 
 <br>
 
-## Installation [↑]
+## Installation [↑]()
 
 1. Download the latest release at [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases)
 2. Place the file in your `Palguard` folder.
@@ -124,7 +124,7 @@ English |[繁體中文](./README_ZH_TW.md)
    ```
 <br>
 
-## Question [↑]
+## Question [↑]()
 
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
    -  Maybe PalDefender has not been updated yet,
@@ -138,7 +138,7 @@ English |[繁體中文](./README_ZH_TW.md)
 
 <br>
 
-## Authors [↑]
+## Authors []()
 
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
