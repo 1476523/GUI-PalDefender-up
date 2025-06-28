@@ -129,11 +129,11 @@ I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
    1.1 Maybe PalDefender has not been updated yet,
-      Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
+   <br>Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
    1.2 There may be a problem in the GUI-PalDefender-up,
-      Please check the execution log.
+   <br>Please check the execution log.
    1.3 The PalDefender file may not be covered normally,
-      Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
+   <br>Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
 	  Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
 	  Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
 
