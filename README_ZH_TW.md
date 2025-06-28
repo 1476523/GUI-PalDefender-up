@@ -2,7 +2,7 @@
 <p><em>GUI-PalDefender-up</em></p>(#GUI-PalDefender-up)
 <div>
 <p><em>適用於Palserver-GUI中的Paldefender檔案更新</em></p>
-
+<div>
 [English](./README.md) | 繁體中文 |
 
 > [!注意]
