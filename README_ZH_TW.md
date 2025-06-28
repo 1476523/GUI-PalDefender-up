@@ -34,9 +34,6 @@
 <br>
 <br>可以在 [palserver-GUI Discord](https://discord.gg/UA24pctUYc) 找到我。
 
-
-<br>
-
 ## 功能 []()
 
 - [x] 偵測路徑是否正確
@@ -45,8 +42,6 @@
 - [x] 下載最新版本檔案
 - [x] 輸出工作日誌
 - [] ????
-
-<br>
 
 ## 安裝 []()
 
@@ -127,7 +122,6 @@
    ├── palguard.version.txt    # << 在此可以查看目前版本號碼
    └── version.dll
    ```
-<br>
 
 ## 問題 []()
 
@@ -139,9 +133,7 @@
    -  可能未正常覆蓋 PalDefender 檔案，
  <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
  <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
- <br> 前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新
-
-<br>
+ <br> 前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新 > 完成
 
 ## 作者 []()
 
