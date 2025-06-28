@@ -6,7 +6,7 @@ English | [繁體中文](./README_ZH_TW.md)
 
 > [!WARNING]
 >
-> Although this update program has undergone basic operational testing, unexpected situations may occur.
+> Although this update program has undergone basic operational testing,unexpected situations may occur.
 > 
 > Be sure to make any file changes or file movements,
 > 
@@ -24,7 +24,7 @@ English | [繁體中文](./README_ZH_TW.md)
 
 ## About []()
 
-<br>This program is to prevent incorrect updates,
+This program is to prevent incorrect updates,
 <br>Lock the updated folder and back up the original archive,
 <br>Crawl the latest archives and replace the existing ones.
 <br>
