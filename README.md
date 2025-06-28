@@ -1,4 +1,4 @@
-## GUI-PalDefender-up [ ](#up)
+## [GUI-PalDefender-up](#up)
 <br>Applicable to PalDefender archive updates within palserver-gui.
 English |[繁體中文](./README_ZH_TW.md)
 
