@@ -1,4 +1,5 @@
-<p><em>GUI-PalDefender-up</em></p>(#GUI-PalDefender-up)
+(#GUI-PalDefender-up)
+<p><em>GUI-PalDefender-up</em></p>
 <p><em>適用於Palserver-GUI中的Paldefender檔案更新</em></p>
 
 [English](./README.md) | 繁體中文 |
@@ -14,7 +15,7 @@
 > 以免發生意料之外的狀況
 >
 
-## 目录
+## 目錄
 * [關於](#關於-)
 * [功能](#功能-)
 * [安裝](#安裝-)
