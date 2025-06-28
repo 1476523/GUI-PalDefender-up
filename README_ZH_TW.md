@@ -45,7 +45,7 @@
 
 ## 安裝 []()
 
-1. 在 [github](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
+1. 在 [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
 2. 將程式放在你的 `Palguard` 資料夾內
    <br>目錄結構應如下所示：
    ```
