@@ -41,7 +41,10 @@
 - [x] 檢查版本是否最新
 - [x] 下載最新版本檔案
 - [x] 輸出工作日誌
-- [] ????
+- [x] 支援自選instances
+- [x] 免進入GUI按更新
+- [x] 一次更新多伺服器
+- [ ] ?????
 
 ## 安裝 []()
 
@@ -90,22 +93,48 @@
    └── 檢查目前檔案
        ├── 檔案存在
        │   └── 讀取版本號
-	   │       └── 建立備份資料夾
-	   │           └── 檢查更新
-	   │               ├── 已經是最新版本
-	   │               │   └── 建立或更新執行日誌
-	   │               │       └── 完畢
-	   │               └── 不是最新版本
-	   │                   └── 下載最新檔案
-	   │                       └── 建立或更新執行日誌
-	   │                           └── 完畢
-	   └── 檔案不存在
+       │           └── 建立備份資料夾
+       │               └── 檢查更新
+       │                   ├── 已經是最新版本
+       │                   │   └── 建立或更新`GUI PalDefender up 日誌.log`
+       │                   │       └── 完畢
+       │                   └── 不是最新版本
+       │                       └── 下載最新檔案
+       │                           └── 取代目前檔案
+       │                               └── 掃描 `instances` 目錄
+       │                                   ├── 找到 sr-為開頭的資料夾
+       │                                   │   └── 開啟路徑 `server\Pal\Binaries\Win64`
+       │                                   │       └── 取代目前檔案
+       │                                   │           └── 建立或更新`GUI PalDefender up 日誌.log`
+       │                                   │               └── 完畢
+       │                                   └── 找不到 sr-為開頭的資料夾
+       │                                       └── 由使用者開啟 `instances` 目錄
+       │                                           └── 掃描 `instances` 目錄
+       │                                               └── 找到 sr-為開頭的資料夾
+       │                                                   └── 開啟路徑 `server\Pal\Binaries\Win64`
+       │                                                       └── 取代目前檔案
+       │                                                           └── 建立或更新`GUI PalDefender up 日誌.log`
+       │                                                               └── 完畢
+       └── 檔案不存在
 	       └── 下載最新檔案
-		       └── 建立或更新執行日誌
-			   	   └── 完畢
+               └── 取代目前檔案
+                   └── 掃描 `instances` 目錄
+                         ├── 找到 sr-為開頭的資料夾
+                         │   └── 開啟路徑 `server\Pal\Binaries\Win64`
+                         │       └── 取代目前檔案
+                         │           └── 建立或更新`GUI PalDefender up 日誌.log`
+                         │               └── 完畢
+                         └── 找不到 sr-為開頭的資料夾
+                             └── 由使用者開啟 `instances` 目錄
+                                 └── 掃描 `instances` 目錄
+                                     └── 找到 sr-為開頭的資料夾
+                                         └── 開啟路徑 `server\Pal\Binaries\Win64`
+                                             └── 取代目前檔案
+                                                 └── 建立或更新`GUI PalDefender up 日誌.log`
+                                                     └── 完畢
    ```
 5. `GUI PalDefender up.exe` 執行速度很快(通常是秒完成)，
-   <br>可以檢查執行日誌來確認更新是否成功。
+   <br>可以檢查`GUI PalDefender up 日誌.log`來確認更新是否成功。
 6. 啟動伺服器後，
    <br>查看CMD上方的 `Starting PalDefender Anti Cheat` 是否已經是最新版本。
 7. 當備份資料夾過多時，
@@ -127,9 +156,9 @@
 
 1. 按下 Palguard 的更新後，PalDefender 沒有更新至最新版本。
    -  可能 PalDefender 尚未更新，
- <br> 請查看執行日誌與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
+ <br> 請查看`GUI PalDefender up 日誌.log`與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
    -  可能執行 GUI-PalDefender-up 時出現問題，
- <br> 請查看執行日誌。
+ <br> 請查看`GUI PalDefender up 日誌.log`。
    -  可能未正常覆蓋 PalDefender 檔案，
  <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
  <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
