@@ -39,7 +39,10 @@ This program is to prevent incorrect updates,
 - [x] Check if the version is latest.
 - [x] Download the latest version of the archive.
 - [x] Output work log.
-- [] ????
+- [x] Supports optional instances.
+- [x] No need to go to the server settings of the palserver-GUI to click Update.
+- [x] Update multiple servers at once.
+- [ ] ?????
 
 ## Installation []()
 
@@ -91,19 +94,45 @@ This program is to prevent incorrect updates,
 	   │       └── Create a backup folder
 	   │           └── Check for updates
 	   │               ├── It's already the latest version
-	   │               │   └── Create or update execution log
+	   │               │   └── Create or update `GUI PalDefender up 日誌.log`
 	   │               │       └── complete
 	   │               └── Not the latest version
 	   │                   └── Download the latest archives
-	   │                       └── Create or update execution log
-	   │                           └── complete
+	   │                       └── Replace current archives
+	   │                           └──Scan the `instances` directory
+	   │                               ├── Find the folder that starts with `sr-`
+	   │                               │   └── Open path `server\Pal\Binaries\Win64`
+	   │                               │       └── Replace current archives
+	   │                               │           └── Create or update `GUI PalDefender up 日誌.log`
+	   │                               │               └── complete
+	   │                               └── The folder starting with `sr-` cannot be found
+	   │                                   └── Let the user open the `instances` directory
+	   │                                       └──Scan the `instances` directory
+	   │                                           └── Find the folder that starts with `sr-`
+	   │                                               └── Open path `server\Pal\Binaries\Win64`
+	   │                                                   └── Replace current archives
+	   │                                                       └── Create or update `GUI PalDefender up 日誌.log`
+	   │                                                           └── complete
 	   └── The file does not exist
 	       └── Download the latest archives
-		       └── Create or update execution log
-			   	   └── complete
+               └── Replace current archives
+                   └──Scan the `instances` directory
+                      ├── Find the folder that starts with `sr-`
+                      │   └── Open path `server\Pal\Binaries\Win64`
+                      │       └── Replace current archives
+                      │           └── Create or update `GUI PalDefender up 日誌.log`
+                      │               └── complete
+                      └── The folder starting with `sr-` cannot be found
+                          └── Let the user open the `instances` directory
+                              └──Scan the `instances` directory
+                                 └── Find the folder that starts with `sr-`
+                                     └── Open path `server\Pal\Binaries\Win64`
+                                         └── Replace current archives
+                                             └── Create or update `GUI PalDefender up 日誌.log`
+                                                 └── complete
    ```
 5. `GUI PalDefender up.exe` executes very fast (usually completed in seconds),
-   <br>You can check the execution log to confirm that the update is successful.
+   <br>You can check the `GUI PalDefender up 日誌.log` to confirm that the update is successful.
 6. After starting the server,
    <br>Check if Starting PalDefender Anti Cheat above CMD is already the latest version.
 7. When there are too many backup folders,
@@ -125,9 +154,9 @@ This program is to prevent incorrect updates,
 
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
    -  Maybe PalDefender has not been updated yet,
-    <br> Please check the execution log and [PalDefender](https://github.com/Ultimeit/PalDefender) .
+    <br> Please check the `GUI PalDefender up 日誌.log` and [PalDefender](https://github.com/Ultimeit/PalDefender) .
    -  There may be a problem in the GUI-PalDefender-up,
-    <br> Please check the execution log.
+    <br> Please check the `GUI PalDefender up 日誌.log`.
    -  The PalDefender file may not be covered normally,
     <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
     <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
