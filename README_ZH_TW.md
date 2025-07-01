@@ -104,11 +104,11 @@
        │           └── 生成文件 GUI PalDefender up config.ini
        └── 有設定檔
            └── 檢查檔案路徑 (GUI PalDefender up.exe的放置路徑)
-   	       ├── 錯誤的檔案路徑
+               ├── 錯誤的檔案路徑
                │   ├── 顯示錯誤視窗
-	       │   └── 生成文件 GUI PalDefender up 日誌.log
-   	       └── 正確的檔案路徑
-   	           └── 檢查目前檔案
+               │   └── 生成文件 GUI PalDefender up 日誌.log
+               └── 正確的檔案路徑
+                   └── 檢查目前檔案
                        ├── 檔案不存在
                        │   ├── 生成文件 GUI PalDefender up 日誌.log
                        │   ├── 下載檔案 PalDefender.dll
@@ -149,15 +149,15 @@
    <br>檔案刪除的範例：
    ```
    Palguard
-   ├── 142/                    # << 可以刪除的資料夾
-   ├── 143/                    # << 可以刪除的資料夾
-   ├── 144/                    # << 上一個版本的備份資料夾
-   ├── 145/                    # << 目前版本的備份資料夾
+   ├── 142/                           # << 可以刪除的資料夾
+   ├── 143/                           # << 可以刪除的資料夾
+   ├── 144/                           # << 上一個版本的備份資料夾
+   ├── 145/                           # << 目前版本的備份資料夾
    ├── GUI PalDefender up config.ini
    ├── GUI PalDefender up 日誌.log
    ├── GUI PalDefender up.exe
    ├── PalDefender.dll
-   ├── palguard.version.txt    # << 在此可以查看目前版本號碼
+   ├── palguard.version.txt           # << 在此可以查看目前版本號碼
    └── version.dll
    ```
 
