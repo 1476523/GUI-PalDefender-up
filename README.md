@@ -102,11 +102,11 @@ This program is to prevent incorrect updates,
        │           └── Generate file GUI PalDefender up config.ini
        └── Have files
            └── Check the file path (GUI PalDefender up.exe placement path)
-   	       ├── Wrong file path
+               ├── Wrong file path
                │   ├── Display error window
-	       │   └── Generate file GUI PalDefender up record.log
-   	       └── Correct file path
-   	           └── Check current files
+               │   └── Generate file GUI PalDefender up record.log
+               └── Correct file path
+                   └── Check current files
                        ├── The file does not exist
                        │   ├── Generate file GUI PalDefender up record.log
                        │   ├── Download the file PalDefender.dll
@@ -147,15 +147,15 @@ This program is to prevent incorrect updates,
    <br>Example of folder deletion：
    ```
    Palguard
-   ├── 142/                    # << File folders that can be deleted
-   ├── 143/                    # << File folders that can be deleted
-   ├── 144/                    # << The backup folder of the previous version
-   ├── 145/                    # << The backup folder for the current version
+   ├── 142/                           # << File folders that can be deleted
+   ├── 143/                           # << File folders that can be deleted
+   ├── 144/                           # << The backup folder of the previous version
+   ├── 145/                           # << The backup folder for the current version
    ├── GUI PalDefender up config.ini
    ├── GUI PalDefender up record.log
    ├── GUI PalDefender up.exe
    ├── PalDefender.dll
-   ├── palguard.version.txt    # << You can view the current version number here
+   ├── palguard.version.txt           # << You can view the current version number here
    └── version.dll
    ```
 
