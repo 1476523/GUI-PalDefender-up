@@ -141,7 +141,7 @@ This program is to prevent incorrect updates,
 5. `GUI PalDefender up.exe` executes very fast (usually completed in seconds),
    <br>You can check the `GUI PalDefender up record.log` to confirm that the update is successful.
 6. After starting the server,
-   <br>Check if Starting PalDefender Anti Cheat above CMD is already the latest version.
+   <br>Check whether the `Starting PalDefender Anti Cheat` displayed above `CMD` is already the latest version.
 7. When there are too many backup folders,
    <br>For security reasons, please keep the backup of the last 2 versions (including the current version).
    <br>Example of folder deletion：
