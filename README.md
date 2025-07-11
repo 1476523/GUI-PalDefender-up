@@ -165,7 +165,7 @@ This program is to prevent incorrect updates,
     <br> Please check the `GUI PalDefender up record.log` and [PalDefender](https://github.com/Ultimeit/PalDefender) .
    -  There may be a problem in the GUI-PalDefender-up,
     <br> Please check the `GUI PalDefender up record.log`.
-   -  The PalDefender file may not be covered normally,
+   -  The PalDefender file may not be covered normally(Including Beta version),
     <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
     <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
     <br> Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
