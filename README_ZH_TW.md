@@ -167,7 +167,7 @@
  <br> 請查看`GUI PalDefender up 日誌.log`與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
    -  可能執行 GUI-PalDefender-up 時出現問題，
  <br> 請查看`GUI PalDefender up 日誌.log`。
-   -  可能未正常覆蓋 PalDefender 檔案，
+   -  可能未正常覆蓋 PalDefender 檔案(包含Beta版)，
  <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
  <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
  <br> 前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新 > 完成
