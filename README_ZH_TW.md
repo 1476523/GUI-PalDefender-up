@@ -170,7 +170,7 @@
    -  可能未正常覆蓋 PalDefender 檔案(包含Beta版)，
  <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
  <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
- <br> 前往 palserver-GUI > 伺服器設定 > Palguard 需要更新！ > 更新 > 完成
+ <br> 最後再次執行`GUI PalDefender up.exe`即可。
 
 ## 作者
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
