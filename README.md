@@ -168,7 +168,7 @@ This program is to prevent incorrect updates,
    -  The PalDefender file may not be covered normally(Including Beta version),
     <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
     <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
-    <br> Please go to palserver-GUI > Server Settings > Palguard Needs Upgrade! > Upgrade > Finish.
+    <br> Finally, execute `GUI PalDefender up.exe` again.
 
 ## Authors
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
