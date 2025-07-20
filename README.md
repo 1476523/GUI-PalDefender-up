@@ -3,7 +3,9 @@ Applicable to PalDefender archive updates within palserver-gui.
 
 > [!WARNING]
 >
-> Although this update program has undergone basic operational testing,unexpected situations may occur.
+> Although this update program has undergone basic operational testing,
+> 
+> But unexpected situations may occur.
 > 
 > Be sure to make any file changes or file movements,
 > 
