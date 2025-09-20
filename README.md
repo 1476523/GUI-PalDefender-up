@@ -27,7 +27,7 @@ English | [繁體中文](./README_ZH_TW.md)
 
 ## About
 This program is to prevent incorrect updates,
-<br>Lock the updated folder and back up the original archive,
+<br>Lock the updated folder,
 <br>Crawl the latest archives and replace the existing ones.
 <br>
 <br>The code is closed source and we dont have any plans to release it.
@@ -35,21 +35,21 @@ This program is to prevent incorrect updates,
 <br>I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 <br>
 <br>This README is suitable for version：
-<br>GUI PalDefender up v1.2
+<br>GUI PalDefender up v1.3
 <br>
 
 ## Features
 - [x] Check whether the file path is correct.
-- [x] Back up existing version archives.
 - [x] Check if the version is latest.
 - [x] Download the latest version of the archive.
 - [x] Output work log.
 - [x] Supports optional instances.
 - [x] No need to go to the server settings of the palserver-GUI to click Update.
 - [x] Update multiple servers at once.
-- [x] Tools language selection
-- [x] Select GUI installation method
-- [x] Output settings file
+- [x] Tools language selection.
+- [x] Select GUI installation method.
+- [x] Output settings file.
+- [x] Delete old file.
 - [ ] ?????
 
 ## Installation
@@ -68,13 +68,13 @@ This program is to prevent incorrect updates,
    │   │   │   ├── server-template/
    │   │   │   │   ├── Config
    │   │   │   │   ├── Palguard                           # << Put here
-   │   │   │   │   │   ├── xxx/                           # << Will be generated
+   │   │   │   │   │   ├── d3d9.dll                       # << Newly added after PalDefender v1.5.2
    │   │   │   │   │   ├── GUI PalDefender up config.ini  # << This file will be generated
    │   │   │   │   │   ├── GUI PalDefender up record.log  # << This file will be generated
    │   │   │   │   │   ├── GUI PalDefender up.exe         # << This program
    │   │   │   │   │   ├── PalDefender.dll
    │   │   │   │   │   ├── palguard.version.txt
-   │   │   │   │   │   └── version.dll
+   │   │   │   │   │   └── version.dll                    # << Deprecated after PalDefender v1.5.2
    │   │   │   │   ├── Saved
    │   │   │   │   └── UE4SS
    │   │   │   ├── steamcmd-engine/
@@ -93,7 +93,7 @@ This program is to prevent incorrect updates,
    └── <...>
    ```
 3. Please close `palserver-gui` first before starting `GUI PalDefender up.exe`.
-4. When `gui paldefender up.exe` is executed, the original archive will be backed up and the online archive will be checked for updates.
+4. Updates will be checked when `GUI PalDefender up.exe` is executed.
    <br>The following steps will be performed when executing `GUI PalDefender up.exe`:
    ```
    GUI PalDefender up.exe Start
@@ -106,60 +106,38 @@ This program is to prevent incorrect updates,
            └── Check the file path (GUI PalDefender up.exe placement path)
                ├── Wrong file path
                │   ├── Display error window
-               │   └── Generate file GUI PalDefender up record.log
+               │   ├── Generate or write a fil GUI PalDefender up record.log
+               │   └── Terminate the program
                └── Correct file path
                    └── Check current files
-                       ├── The file does not exist
-                       │   ├── Generate file GUI PalDefender up record.log
-                       │   ├── Download the file PalDefender.dll
-                       │   ├── Generate file palguard.version.txt
-                       │   ├── Download the file version.dll
-                       │   └── Show update prompt window
-                       └── files exist
-                           └── Generate folder with name of version number
-                               ├── Backup files (Backup PalDefender.dll,version.dll,palguard.version.txt to this folder)
-                               └── Check file version
-                                   ├── Discover a new version
-                                   │   └── Download the new version file
-                                   └── No new version
-                                       ├── Generate and write files GUI PalDefender up record.log
-                                       └── Show update prompt window
-                                           └── Check the instances folder of the server archive
-                                               ├── The folder does not exist
-                                               │   └── Display error window
-                                               │       ├── Write to a file GUI PalDefender up record.log
-                                               │       └── Open instances folder by user
-                                               │           ├── Check as an error folder or not selected folder
-                                               │           │   ├── Write to a file GUI PalDefender up record.log
-                                               │           │   └── Terminate the program
-                                               │           └── Check for the correct file folder
-                                               │               ├── Write to a file GUI PalDefender up config.ini
-                                               │               └── Write to a file GUI PalDefender up record.log
-                                               └── The folder exists or the folder path has been set
-                                                   └── Update folder files
-                                                       └── Show update prompt window
-                                                           └── Finish
+                       └── Check file version
+                           ├── No new version
+                           │   ├── Generate or write a fil GUI PalDefender up record.log
+                           │   └── Finish
+                           └── Discover a new version (If the file is missing, the default is currently the old version.)
+                               ├── Generate or write a fil GUI PalDefender up record.log
+                               └── Show update prompt window
+                                   └── Check the instances folder of the server archive
+                                       ├── The folder does not exist
+                                       │   ├── Write to a file GUI PalDefender up record.log
+                                       │   └── Display error window
+                                       │       └── Open instances folder by user
+                                       │           ├── Check as an error folder or not selected folder
+                                       │           │   ├── Write to a file GUI PalDefender up record.log
+                                       │           │   └── Terminate the program
+                                       │           └── Check for the correct file folder
+                                       │               ├── Write to a file GUI PalDefender up config.ini
+                                       │               └── Write to a file GUI PalDefender up record.log
+                                       └── The folder exists or the folder path has been set
+                                           ├── Update folder files
+                                           ├── Write to a file GUI PalDefender up record.log
+                                           └── Show update prompt window
+                                               └── Finish
    ```
 5. `GUI PalDefender up.exe` executes very fast (usually completed in seconds),
    <br>You can check the `GUI PalDefender up record.log` to confirm that the update is successful.
 6. After starting the server,
    <br>Check whether the `Starting PalDefender Anti Cheat` displayed above `CMD` is already the latest version.
-7. When there are too many backup folders,
-   <br>For security reasons, please keep the backup of the last 2 versions (including the current version).
-   <br>Example of folder deletion：
-   ```
-   Palguard
-   ├── 142/                           # << File folders that can be deleted
-   ├── 143/                           # << File folders that can be deleted
-   ├── 144/                           # << The backup folder of the previous version
-   ├── 145/                           # << The backup folder for the current version
-   ├── GUI PalDefender up config.ini
-   ├── GUI PalDefender up record.log
-   ├── GUI PalDefender up.exe
-   ├── PalDefender.dll
-   ├── palguard.version.txt           # << You can view the current version number here
-   └── version.dll
-   ```
 
 ## Question
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
@@ -176,3 +154,4 @@ This program is to prevent incorrect updates,
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
