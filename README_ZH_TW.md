@@ -27,7 +27,7 @@
 
 ## 關於
 為了防止錯誤的更新而建立的更新程式，
-<br>鎖定更新的資料夾並備份原始檔案，
+<br>鎖定更新的資料夾，
 <br>抓取最新的檔案並取代現有檔案。
 <br>
 <br>代碼是閉源的，我們沒有計劃發布它。
@@ -35,12 +35,11 @@
 <br>可以在 [palserver-GUI Discord](https://discord.gg/UA24pctUYc) 找到我。
 <br>
 <br>此README適用版本：
-<br>GUI PalDefender up v1.2
+<br>GUI PalDefender up v1.3
 <br>
 
 ## 功能
 - [x] 偵測路徑是否正確
-- [x] 備份現有版本檔案
 - [x] 檢查版本是否最新
 - [x] 下載最新版本檔案
 - [x] 輸出工作日誌
@@ -50,6 +49,7 @@
 - [x] 程式語言選擇
 - [x] GUI安裝方式選擇
 - [x] 輸出設定文件
+- [x] 刪除舊版檔案
 - [ ] ?????
 
 ## 安裝
@@ -68,13 +68,13 @@
    │   │   │   ├── server-template/
    │   │   │   │   ├── Config
    │   │   │   │   ├── Palguard                           # << 放在此處
-   │   │   │   │   │   ├── xxx/                           # << 將生成此文件夾
+   │   │   │   │   │   ├── d3d9.dll                       # << PalDefender v1.5.2 後新增
    │   │   │   │   │   ├── GUI PalDefender up config.ini  # << 將生成此文件
    │   │   │   │   │   ├── GUI PalDefender up 日誌.log    # << 將生成此文件
    │   │   │   │   │   ├── GUI PalDefender up.exe         # << 這個程式
    │   │   │   │   │   ├── PalDefender.dll
    │   │   │   │   │   ├── palguard.version.txt
-   │   │   │   │   │   └── version.dll
+   │   │   │   │   │   └── version.dll                    # << PalDefender v1.5.2 後棄用
    │   │   │   │   ├── Saved
    │   │   │   │   └── UE4SS
    │   │   │   ├── steamcmd-engine/
@@ -93,7 +93,7 @@
    └── <...>
    ```
 3. 請先關閉 `palserver-gui` 後再啟動 `GUI PalDefender up.exe`，
-4. 執行 `GUI PalDefender up.exe` 時將會備份原始檔案並檢查更新。
+4. 執行 `GUI PalDefender up.exe` 時將會檢查更新。
    <br>執行 `GUI PalDefender up.exe` 時將會執行以下步驟：
    ```
    GUI PalDefender up.exe 啟動
@@ -106,60 +106,38 @@
            └── 檢查檔案路徑 (GUI PalDefender up.exe的放置路徑)
                ├── 錯誤的檔案路徑
                │   ├── 顯示錯誤視窗
-               │   └── 生成文件 GUI PalDefender up 日誌.log
+               │   ├── 生成並寫入文件 GUI PalDefender up 日誌.log
+               │   └── 終止程式
                └── 正確的檔案路徑
                    └── 檢查目前檔案
-                       ├── 檔案不存在
-                       │   ├── 生成文件 GUI PalDefender up 日誌.log
-                       │   ├── 下載檔案 PalDefender.dll
-                       │   ├── 生成文件 palguard.version.txt
-                       │   ├── 下載檔案 version.dll
-                       │   └── 顯示更新提示視窗
-                       └── 檔案存在
-                           └── 生成名稱為版本號的資料夾
-                               ├── 備份檔案 (將PalDefender.dll、version.dll、palguard.version.txt備份至此資料夾)
-                               └── 檢查檔案版本
-                                   ├── 發現新版本
-                                   │   └── 下載新版檔案
-                                   └── 已經是最新版本
-                                       ├── 生成並寫入文件 GUI PalDefender up 日誌.log
-                                       └── 顯示更新提示視窗
-                                           └── 檢查伺服器存檔的 instances 資料夾
-                                               ├── 資料夾不存在
-                                               │   └── 顯示錯誤視窗
-                                               │       ├── 寫入文件 GUI PalDefender up 日誌.log
-                                               │       └── 由使用者開啟 instances 資料夾
-                                               │           ├── 檢查為錯誤資料夾或未選取資料夾
-                                               │           │   ├── 寫入文件 GUI PalDefender up 日誌.log
-                                               │           │   └── 終止程式
-                                               │           └── 檢查為正確資料夾
-                                               │               ├── 寫入文件 GUI PalDefender up config.ini
-                                               │               └── 寫入文件 GUI PalDefender up 日誌.log
-                                               └── 資料夾存在或已設定資料夾路徑
-                                                   └── 更新資料夾檔案
-                                                       └── 顯示更新提示視窗
-                                                           └── 完畢
+                       └── 檢查檔案版本
+                           ├── 已經是最新版本
+                           │   ├── 生成或寫入文件 GUI PalDefender up 日誌.log
+                           │   └── 完畢
+                           └── 發現新版本 (缺少檔案則默認需要更新)
+                               ├── 生成或寫入文件 GUI PalDefender up 日誌.log
+                               └── 顯示更新提示視窗
+                                   └── 檢查伺服器存檔的 instances 資料夾
+                                       ├── 資料夾不存在
+                                       │   ├── 寫入文件 GUI PalDefender up 日誌.log
+                                       │   └── 顯示錯誤視窗
+                                       │       └── 由使用者開啟 instances 資料夾
+                                       │           ├── 檢查為錯誤資料夾或未選取資料夾
+                                       │           │   ├── 寫入文件 GUI PalDefender up 日誌.log
+                                       │           │   └── 終止程式
+                                       │           └── 檢查為正確資料夾
+                                       │               ├── 寫入文件 GUI PalDefender up config.ini
+                                       │               └── 寫入文件 GUI PalDefender up 日誌.log
+                                       └── 資料夾存在或已設定資料夾路徑
+                                           ├── 更新資料夾檔案
+                                           ├── 寫入文件 GUI PalDefender up config.ini
+                                           └── 顯示更新提示視窗
+                                               └── 完畢
    ```
 5. `GUI PalDefender up.exe` 執行速度很快(通常是秒完成)，
    <br>可以檢查`GUI PalDefender up 日誌.log`來確認更新是否成功。
 6. 啟動伺服器後，
    <br>查看CMD上方的 `Starting PalDefender Anti Cheat` 是否已經是最新版本。
-7. 當備份資料夾過多時，
-   <br>為了安全起見，請保留最近2個版本的備份(含當前版本)。
-   <br>檔案刪除的範例：
-   ```
-   Palguard
-   ├── 142/                           # << 可以刪除的資料夾
-   ├── 143/                           # << 可以刪除的資料夾
-   ├── 144/                           # << 上一個版本的備份資料夾
-   ├── 145/                           # << 目前版本的備份資料夾
-   ├── GUI PalDefender up config.ini
-   ├── GUI PalDefender up 日誌.log
-   ├── GUI PalDefender up.exe
-   ├── PalDefender.dll
-   ├── palguard.version.txt           # << 在此可以查看目前版本號碼
-   └── version.dll
-   ```
 
 ## 問題
 1. 按下 Palguard 的更新後，PalDefender 沒有更新至最新版本。
@@ -176,3 +154,4 @@
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
