@@ -47,112 +47,56 @@
 - [x] 免進入GUI按更新
 - [x] 一次更新多伺服器
 - [x] 程式語言選擇
-- [x] GUI安裝方式選擇
 - [x] 輸出設定文件
 - [x] 刪除舊版檔案
+- [x] 強制更新檔案
+- [x] 清除日誌
+- [x] 清除GUI暫存
 - [ ] ?????
 
 ## 安裝
+   ```
+   GUI PalDefender up.exe 介紹
+   ├── 系統設定
+   │   ├── 選擇 GUI 路徑
+   │   ├── 選擇 instances 路徑
+   │   └── 語言
+   ├── 檢查更新
+   ├── 關於此程式
+   │   └── 版本與介紹
+   ├── 清除日誌
+   ├── 清除 GUI 暫存
+   └── 離開系統
+   ```
 1. 在 [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
-2. 將程式放在你的 `Palguard` 資料夾內
-   <br>目錄結構應如下所示：
+2. 將程式放在任意地方
+3. 執行 `GUI PalDefender up.exe` (首次執行會出現語言設定)
+4. 左鍵點擊 檢查更新 即可更新(首次需要先前往系統設定完成路徑設定)
    ```
-   palserver-gui/
-   ├── locales/
-   ├── resources/
-   │   ├── app/
-   │   ├── assets/
-   │   │   ├── engine/
-   │   │   │   ├── server-icons/
-   │   │   │   ├── server-online-map/
-   │   │   │   ├── server-template/
-   │   │   │   │   ├── Config
-   │   │   │   │   ├── Palguard                           # << 放在此處
-   │   │   │   │   │   ├── d3d9.dll                       # << PalDefender v1.5.2 後新增
-   │   │   │   │   │   ├── GUI PalDefender up config.ini  # << 將生成此文件
-   │   │   │   │   │   ├── GUI PalDefender up 日誌.log    # << 將生成此文件
-   │   │   │   │   │   ├── GUI PalDefender up.exe         # << 這個程式
-   │   │   │   │   │   ├── PalDefender.dll
-   │   │   │   │   │   ├── palguard.version.txt
-   │   │   │   │   │   └── version.dll                    # << PalDefender v1.5.2 後棄用
-   │   │   │   │   ├── Saved
-   │   │   │   │   └── UE4SS
-   │   │   │   ├── steamcmd-engine/
-   │   │   │   └── engine.config.json
-   │   │   ├── game-data/
-   │   │   ├── icons/
-   │   │   ├── <...>
-   │   │   ├── icon.png
-   │   │   └── icon.svg
-   │   ├── app-update.yml
-   │   └── elevate.exe
-   ├── <...>
-   ├── LICENSE.electron.txt
-   ├── LICENSES.chromium.html
-   ├── palserver-gui.exe
-   └── <...>
+   系統設定說明
+   選擇 GUI 路徑：
+   請選擇啟動 palserver-gui 的捷徑或執行檔
+
+   選擇 instances 路徑：
+   請點擊 使用預設路徑 或選擇您自訂的路徑(通常是使用預設)
+
+   設定完畢請按 保存設定
+   否則設定將不會被儲存
    ```
-3. 請先關閉 `palserver-gui` 後再啟動 `GUI PalDefender up.exe`，
-4. 執行 `GUI PalDefender up.exe` 時將會檢查更新。
-   <br>執行 `GUI PalDefender up.exe` 時將會執行以下步驟：
-   ```
-   GUI PalDefender up.exe 啟動
-   └── 讀取設定檔 (GUI PalDefender up config.ini)
-       ├── 無設定檔
-       │   └── 顯示設定視窗
-       │       └── 完成設定
-       │           └── 生成文件 GUI PalDefender up config.ini
-       └── 有設定檔
-           └── 檢查檔案路徑 (GUI PalDefender up.exe的放置路徑)
-               ├── 錯誤的檔案路徑
-               │   ├── 顯示錯誤視窗
-               │   ├── 生成並寫入文件 GUI PalDefender up 日誌.log
-               │   └── 終止程式
-               └── 正確的檔案路徑
-                   └── 檢查目前檔案
-                       └── 檢查檔案版本
-                           ├── 已經是最新版本
-                           │   ├── 生成或寫入文件 GUI PalDefender up 日誌.log
-                           │   └── 完畢
-                           └── 發現新版本 (缺少檔案則默認需要更新)
-                               ├── 生成或寫入文件 GUI PalDefender up 日誌.log
-                               └── 顯示更新提示視窗
-                                   └── 檢查伺服器存檔的 instances 資料夾
-                                       ├── 資料夾不存在
-                                       │   ├── 寫入文件 GUI PalDefender up 日誌.log
-                                       │   └── 顯示錯誤視窗
-                                       │       └── 由使用者開啟 instances 資料夾
-                                       │           ├── 檢查為錯誤資料夾或未選取資料夾
-                                       │           │   ├── 寫入文件 GUI PalDefender up 日誌.log
-                                       │           │   └── 終止程式
-                                       │           └── 檢查為正確資料夾
-                                       │               ├── 寫入文件 GUI PalDefender up config.ini
-                                       │               └── 寫入文件 GUI PalDefender up 日誌.log
-                                       └── 資料夾存在或已設定資料夾路徑
-                                           ├── 更新資料夾檔案
-                                           ├── 寫入文件 GUI PalDefender up config.ini
-                                           └── 顯示更新提示視窗
-                                               └── 完畢
-   ```
-5. `GUI PalDefender up.exe` 執行速度很快(通常是秒完成)，
-   <br>可以檢查`GUI PalDefender up 日誌.log`來確認更新是否成功。
+5. 更新結果會顯示於 `GUI PalDefender up.exe` 下方(執行速度很快且通常是秒完成)。
 6. 啟動伺服器後，
    <br>查看CMD上方的 `Starting PalDefender Anti Cheat` 是否已經是最新版本。
 
 ## 問題
 1. 按下 Palguard 的更新後，PalDefender 沒有更新至最新版本。
    -  可能 PalDefender 尚未更新，
- <br> 請查看`GUI PalDefender up 日誌.log`與 [PalDefender](https://github.com/Ultimeit/PalDefender) 。
+ <br> 請查看 [PalDefender](https://github.com/Ultimeit/PalDefender) 是否有版本更新。
    -  可能執行 GUI-PalDefender-up 時出現問題，
- <br> 請查看`GUI PalDefender up 日誌.log`。
-   -  可能未正常覆蓋 PalDefender 檔案(包含Beta版)，
- <br> 請前往 palserver-GUI > 以滑鼠右鍵點擊伺服器 > 伺服器資料夾 > `Pal\Binaries\Win64`
- <br> 找到並刪除這三個檔案 `PalDefender.dll` `palguard.version.txt` `version.dll`
- <br> 最後再次執行`GUI PalDefender up.exe`即可。
+ <br> 請在更新後查看 `GUI PalDefender up.exe` 下方提示。
+   -  可能未正常覆蓋 PalDefender 檔案(`包含Beta版`)，
+ <br> 請對 `檢查更新` 按下 `滑鼠右鍵` 來進行 `強制更新檔案` 。
 
 ## 作者
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
-
-
