@@ -68,6 +68,7 @@ This program is to prevent incorrect updates,
    ├── Clear GUI Cache
    └── Exit
    ```
+<img src="https://raw.githubusercontent.com/1476523/GUI-PalDefender-up/refs/heads/main/img/EN-00.jpg" alt="Main page" height="602" width="612"></a>
 1. Download the latest release at [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases)
 2. Put the program anywhere.
 3. Execute `GUI PalDefender up.exe` (Language settings will appear for the first execution).
@@ -83,6 +84,7 @@ This program is to prevent incorrect updates,
    After the settings are completed, please press Save settings to save the settings.
    If you don't click on Save settings, the settings will not be stored.
    ```
+   <img src="https://raw.githubusercontent.com/1476523/GUI-PalDefender-up/refs/heads/main/img/EN-01.jpg" alt="System Settings" height="602" width="612"></a><br>
 5. The update results will be displayed below `GUI PalDefender up.exe` (execution is fast and usually completed in seconds).
 6. After starting the server
    <br>Check whether the `Starting PalDefender Anti Cheat` displayed above `CMD` is already the latest version.
@@ -100,3 +102,4 @@ This program is to prevent incorrect updates,
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
