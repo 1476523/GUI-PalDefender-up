@@ -47,112 +47,56 @@ This program is to prevent incorrect updates,
 - [x] No need to go to the server settings of the palserver-GUI to click Update.
 - [x] Update multiple servers at once.
 - [x] Tools language selection.
-- [x] Select GUI installation method.
 - [x] Output settings file.
 - [x] Delete old file.
+- [x] Forced update of files.
+- [x] Clear log
+- [x] Clear GUI Cache
 - [ ] ?????
 
 ## Installation
+   ```
+   GUI PalDefender up.exe introduce
+   ├── System Settings
+   │   ├── Select GUI path
+   │   ├── Select instances path
+   │   └── Language
+   ├── Check Updates
+   ├── About This Program
+   │   └── Version and introduction
+   ├── Clear Log
+   ├── Clear GUI Cache
+   └── Exit
+   ```
 1. Download the latest release at [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases)
-2. Place the file in your `Palguard` folder.
-   <br>It should look like this：
+2. Put the program anywhere.
+3. Execute `GUI PalDefender up.exe` (Language settings will appear for the first execution).
+4. Click `Check Updates` to update (you need to go to `System Settings` for the first time to complete the path settings).
    ```
-   palserver-gui/
-   ├── locales/
-   ├── resources/
-   │   ├── app/
-   │   ├── assets/
-   │   │   ├── engine/
-   │   │   │   ├── server-icons/
-   │   │   │   ├── server-online-map/
-   │   │   │   ├── server-template/
-   │   │   │   │   ├── Config
-   │   │   │   │   ├── Palguard                           # << Put here
-   │   │   │   │   │   ├── d3d9.dll                       # << Newly added after PalDefender v1.5.2
-   │   │   │   │   │   ├── GUI PalDefender up config.ini  # << This file will be generated
-   │   │   │   │   │   ├── GUI PalDefender up record.log  # << This file will be generated
-   │   │   │   │   │   ├── GUI PalDefender up.exe         # << This program
-   │   │   │   │   │   ├── PalDefender.dll
-   │   │   │   │   │   ├── palguard.version.txt
-   │   │   │   │   │   └── version.dll                    # << Deprecated after PalDefender v1.5.2
-   │   │   │   │   ├── Saved
-   │   │   │   │   └── UE4SS
-   │   │   │   ├── steamcmd-engine/
-   │   │   │   └── engine.config.json
-   │   │   ├── game-data/
-   │   │   ├── icons/
-   │   │   ├── <...>
-   │   │   ├── icon.png
-   │   │   └── icon.svg
-   │   ├── app-update.yml
-   │   └── elevate.exe
-   ├── <...>
-   ├── LICENSE.electron.txt
-   ├── LICENSES.chromium.html
-   ├── palserver-gui.exe
-   └── <...>
+   System Setting Description
+   Select GUI path：
+   Please select palserver-gui's shortcut or execution file (that is, the file started by palserver-gui).
+
+   Select instances path：
+   Please click Use Default Path or select your customized path (usually using a preset)
+
+   After the settings are completed, please press Save settings to save the settings.
+   If you don't click on Save settings, the settings will not be stored.
    ```
-3. Please close `palserver-gui` first before starting `GUI PalDefender up.exe`.
-4. Updates will be checked when `GUI PalDefender up.exe` is executed.
-   <br>The following steps will be performed when executing `GUI PalDefender up.exe`:
-   ```
-   GUI PalDefender up.exe Start
-   └── Check the settings file (GUI PalDefender up config.ini)
-       ├── No files
-       │   └── Display settings window
-       │       └── Complete the settings
-       │           └── Generate file GUI PalDefender up config.ini
-       └── Have files
-           └── Check the file path (GUI PalDefender up.exe placement path)
-               ├── Wrong file path
-               │   ├── Display error window
-               │   ├── Generate or write a fil GUI PalDefender up record.log
-               │   └── Terminate the program
-               └── Correct file path
-                   └── Check current files
-                       └── Check file version
-                           ├── No new version
-                           │   ├── Generate or write a fil GUI PalDefender up record.log
-                           │   └── Finish
-                           └── Discover a new version (If the file is missing, the default is currently the old version.)
-                               ├── Generate or write a fil GUI PalDefender up record.log
-                               └── Show update prompt window
-                                   └── Check the instances folder of the server archive
-                                       ├── The folder does not exist
-                                       │   ├── Write to a file GUI PalDefender up record.log
-                                       │   └── Display error window
-                                       │       └── Open instances folder by user
-                                       │           ├── Check as an error folder or not selected folder
-                                       │           │   ├── Write to a file GUI PalDefender up record.log
-                                       │           │   └── Terminate the program
-                                       │           └── Check for the correct file folder
-                                       │               ├── Write to a file GUI PalDefender up config.ini
-                                       │               └── Write to a file GUI PalDefender up record.log
-                                       └── The folder exists or the folder path has been set
-                                           ├── Update folder files
-                                           ├── Write to a file GUI PalDefender up record.log
-                                           └── Show update prompt window
-                                               └── Finish
-   ```
-5. `GUI PalDefender up.exe` executes very fast (usually completed in seconds),
-   <br>You can check the `GUI PalDefender up record.log` to confirm that the update is successful.
-6. After starting the server,
+5. The update results will be displayed below `GUI PalDefender up.exe` (execution is fast and usually completed in seconds).
+6. After starting the server
    <br>Check whether the `Starting PalDefender Anti Cheat` displayed above `CMD` is already the latest version.
 
 ## Question
 1. After pressing the update of Palguard, PalDefender has not been updated to the latest version.
    -  Maybe PalDefender has not been updated yet,
-    <br> Please check the `GUI PalDefender up record.log` and [PalDefender](https://github.com/Ultimeit/PalDefender) .
+    <br> Please go to [PalDefender](https://github.com/Ultimeit/PalDefender) to see if there is a version update.
    -  There may be a problem in the GUI-PalDefender-up,
-    <br> Please check the `GUI PalDefender up record.log`.
-   -  The PalDefender file may not be covered normally(Including Beta version),
-    <br> Please go to palserver-GUI > Right-click the server > Server Folder > `Pal\Binaries\Win64`,
-    <br> Find and delete these three files `PalDefender.dll` `palguard.version.txt` `version.dll`,
-    <br> Finally, execute `GUI PalDefender up.exe` again.
+    <br> Please check the prompts below `GUI PalDefender up.exe` after the update.
+   -  The PalDefender file may not be covered normally(`Including Beta version`),
+    <br> Right-click `Check Updates` to force an update.
 
 ## Authors
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
-
-
