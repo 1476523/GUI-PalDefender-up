@@ -68,6 +68,7 @@
    ├── 清除 GUI 暫存
    └── 離開系統
    ```
+<img src="https://github.com/1476523/GUI-PalDefender-up/blob/main/img/ZH_TW00.jpg" alt="主頁面" height="602" width="612"></a>
 1. 在 [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up/releases) 下載最新版本
 2. 將程式放在任意地方
 3. 執行 `GUI PalDefender up.exe` (首次執行會出現語言設定)
@@ -83,6 +84,7 @@
    設定完畢請按 保存設定
    否則設定將不會被儲存
    ```
+   <img src="https://github.com/1476523/GUI-PalDefender-up/blob/main/img/ZH_TW01.jpg" alt="系統設定" height="602" width="612"></a><br>
 5. 更新結果會顯示於 `GUI PalDefender up.exe` 下方(執行速度很快且通常是秒完成)。
 6. 啟動伺服器後，
    <br>查看CMD上方的 `Starting PalDefender Anti Cheat` 是否已經是最新版本。
@@ -100,3 +102,4 @@
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
