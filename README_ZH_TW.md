@@ -35,7 +35,7 @@
 <br>可以在 [palserver-GUI Discord](https://discord.gg/UA24pctUYc) 找到我。
 <br>
 <br>此README適用版本：
-<br>GUI PalDefender up v1.3
+<br>GUI PalDefender up v1.3.1
 <br>
 
 ## 功能
@@ -52,6 +52,8 @@
 - [x] 強制更新檔案
 - [x] 清除日誌
 - [x] 清除GUI暫存
+- [x] 公告項目
+- [ ] 新版本提示
 - [ ] ?????
 
 ## 安裝
@@ -63,7 +65,7 @@
    │   └── 語言
    ├── 檢查更新
    ├── 關於此程式
-   │   └── 版本與介紹
+   │   └── 版本、簡介及公告
    ├── 清除日誌
    ├── 清除 GUI 暫存
    └── 離開系統
@@ -102,4 +104,5 @@
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
 
