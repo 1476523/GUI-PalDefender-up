@@ -7,7 +7,7 @@
 > 
 > 但也有可能發生意外的情況
 > 
-> 請務必在做任何檔案變更移動時
+> 請務必在做任何檔案變更或移動前
 > 
 > 備份伺服器的存檔
 > 
@@ -104,5 +104,6 @@
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
 
 
