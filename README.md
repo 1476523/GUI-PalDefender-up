@@ -5,11 +5,11 @@ Applicable to PalDefender archive updates within palserver-gui.
 >
 > Although this update program has undergone basic operational testing,
 > 
-> But unexpected situations may occur.
+> But unexpected situations may arise.
 > 
-> Be sure to make any file changes or file movements,
+> Please be sure before making any file changes or file moves,
 > 
-> Backup the server archive,
+> Back up server archives,
 > 
 > Avoid unexpected situations.
 >
@@ -104,5 +104,6 @@ This program is to prevent incorrect updates,
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
 
 
