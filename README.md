@@ -35,7 +35,7 @@ This program is to prevent incorrect updates,
 <br>I can be found in [palserver-GUI Discord](https://discord.gg/UA24pctUYc).
 <br>
 <br>This README is suitable for version：
-<br>GUI PalDefender up v1.3.1
+<br>GUI PalDefender up v1.3.3
 <br>
 
 ## Features
@@ -104,6 +104,7 @@ This program is to prevent incorrect updates,
 - [GUI-PalDefender-up](https://github.com/1476523/GUI-PalDefender-up) [1476523](https://github.com/1476523)
 - [PalDefender](https://github.com/Ultimeit/PalDefender) [Ultimeit](https://github.com/Ultimeit) [Zvendson](https://github.com/Zvendson)
 - [palserver-GUI](https://github.com/Dalufishe/palserver-GUI) [Dalufishe](https://github.com/Dalufishe)
+
 
 
 
