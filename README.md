@@ -3,6 +3,8 @@ Applicable to PalDefender archive updates within palserver-gui.
 
 > [!WARNING]
 >
+> This tool no longer supports GUI 2.0.
+> 
 > Although this update program has undergone basic operational testing,
 > 
 > But unexpected situations may arise.
